@@ -1,16 +1,88 @@
-# React + Vite
+* Веб-сайт студентського гуртожитку
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-застосунок для перегляду доступних кімнат студентського гуртожитку та ознайомлення з умовами проживання.
 
-Currently, two official plugins are available:
+** Основні можливості
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Перегляд доступних кімнат гуртожитку;
+- Відображення номера та типу кімнати;
+- Відображення вартості проживання;
+- Відображення статусу наявності вільних місць;
+- Перегляд опису умов проживання;
+- Відображення повідомлення у випадку відсутності доступних кімнат.
 
-## React Compiler
+** Використані технології
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ReactJS;
+- Vite;
+- JavaScript;
+- HTML;
+- CSS;
+- Node.js;
+- npm;
+- Docker;
+- Docker Compose;
+- Git.
 
-## Expanding the ESLint configuration
+** Структура проєкту
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+mera-app/
+├── docs/
+│   └── project-plan.md
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── ProductCard.jsx
+│   ├── data/
+│   │   └── items.js
+│   ├── pages/
+│   │   └── HomePage.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .dockerignore
+├── Dockerfile
+├── compose.yaml
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+
+** Встановлення та запуск
+Для запуску проєкту необхідно мати встановлені Node.js та npm.
+Клонування репозиторію
+/ git clone https://github.com/Prunko/mera-app
+
+** Перехід до папки проєкту
+/ cd mera-app
+
+** Встановлення залежностей
+/ npm install
+
+** Запуск сервера розробки
+/ npm run dev
+
+Після запуску застосунок буде доступний у браузері за адресою:
+http://localhost:5173/
+
+** Запуск через Docker
+Для запуску застосунку в контейнерному середовищі необхідно мати встановлений та запущений Docker Desktop.
+Побудова образу та запуск контейнера
+/ docker compose up --build
+
+Після успішного запуску застосунок буде доступний у браузері за адресою:
+http://localhost:5173/
+
+** Зупинка контейнера
+Для зупинки контейнера використовується команда:
+/ docker compose down
+
+** Архітектурний план
+Архітектурний план проєкту знаходиться у файлі:
+docs/project-plan.md
