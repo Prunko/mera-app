@@ -1,28 +1,39 @@
-// src/pages/HomePage.jsx
-import ProductCard from '../components/ProductCard';
-import { roomItems } from '../data/items';
+import { useState } from 'react';
+import Header from './components/layout/Header';
+import HomePage from './pages/HomePage';
+import RequestPreviewPage from './pages/RequestPreviewPage';
 
-export default function HomePage() {
+export default function App() {
+    const [currentTab, setCurrentTab] = useState('catalog');
+    const [selectedRoom, setSelectedRoom] = useState(null);
+
+    const handleSelectRoom = (room) => {
+        setSelectedRoom(room);
+        setCurrentTab('request');
+    };
+
+    const handleTabChange = (tab) => {
+        setCurrentTab(tab);
+    };
+
     return (
-        <main>
-            <h1>Студентський гуртожиток №1</h1>
+        <div className="app-layout">
+            <Header currentTab={currentTab} onTabChange={handleTabChange} />
 
-            <p>
-                Комфортне та доступне проживання для студентів.
-                Обирайте кімнату та подавайте заявку онлайн!
-            </p>
+            <div className="app-content">
+                {currentTab === 'catalog' ? (
+                    <HomePage onSelectRoom={handleSelectRoom} />
+                ) : (
+                    <RequestPreviewPage
+                        selectedRoom={selectedRoom}
+                        onBackToCatalog={() => setCurrentTab('catalog')}
+                    />
+                )}
+            </div>
 
-            <h2>Доступні кімнати</h2>
-
-            {roomItems.length === 0 ? (
-                <p>Наразі немає доступних кімнат для відображення.</p>
-            ) : (
-                <div className="rooms-grid">
-                    {roomItems.map((item) => (
-                        <ProductCard key={item.id} item={item} />
-                    ))}
-                </div>
-            )}
-        </main>
+            <footer className="main-footer">
+                <p>© 2026 Студентський гуртожиток №1 ІФНТУНГ. Усі права захищено.</p>
+            </footer>
+        </div>
     );
 }
