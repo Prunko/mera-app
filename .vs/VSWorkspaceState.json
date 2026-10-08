@@ -3,9 +3,14 @@
     "",
     "\\src",
     "\\src\\components",
+    "\\src\\components\\requests",
+    "\\src\\components\\ui",
+    "\\src\\context",
     "\\src\\data",
-    "\\src\\pages"
+    "\\src\\hooks",
+    "\\src\\pages",
+    "\\src\\providers"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\src\\hooks\\useRoomSelection.js",
   "PreviewInSolutionExplorer": false
 }

@@ -1,35 +1,33 @@
-import StatusBadge from '../ui/StatusBadge';
+import { useState } from 'react';
 import Button from '../ui/Button';
 
-export default function RoomCard({ item, onSelect }) {
-    const isAvailable = item.status === 'available';
+export default function RoomCard({ item, isSelected, onSelect }) {
+    const [detailsOpen, setDetailsOpen] = useState(false);
 
     return (
-        <article className="room-card">
-            <div className="room-card-header">
-                <h3 className="room-title">{item.name}</h3>
-                <StatusBadge status={item.status} label={item.statusLabel} />
-            </div>
+        <div className={`room-card ${isSelected ? 'is-selected' : ''}`}>
+            <h3>{item.name}</h3>
+            <p>Статус: <strong>{item.status === 'available' ? 'Вільна' : 'Зайнята'}</strong></p>
 
-            <div className="room-details">
-                <p className="room-info">
-                    <strong>Тип:</strong> {item.type}
-                </p>
-                <p className="room-price">
-                    <strong>Вартість:</strong> <span>{item.price} грн/міс</span>
-                </p>
-                <p className="room-description">{item.description}</p>
-            </div>
-
-            <div className="room-card-footer">
+            <div className="card-actions">
+                <Button variant="outline" onClick={() => setDetailsOpen((prev) => !prev)}>
+                    {detailsOpen ? 'Сховати деталі' : 'Детальніше'}
+                </Button>
                 <Button
-                    variant={isAvailable ? 'primary' : 'secondary'}
-                    disabled={!isAvailable}
-                    onClick={() => onSelect && onSelect(item)}
+                    variant="primary"
+                    disabled={item.status !== 'available'}
+                    onClick={() => onSelect(item.id)}
                 >
-                    {isAvailable ? 'Обрати для поселення' : 'Месць немає'}
+                    {isSelected ? 'Обрано' : 'Обрати для заявки'}
                 </Button>
             </div>
-        </article>
+
+            {detailsOpen && (
+                <div className="card-details">
+                    <p>{item.description}</p>
+                    <p>Поверх: {item.floor} | Місць: {item.capacity}</p>
+                </div>
+            )}
+        </div>
     );
 }

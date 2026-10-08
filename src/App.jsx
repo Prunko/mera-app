@@ -1,15 +1,39 @@
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import HomePage from './pages/HomePage.jsx'
+import { useState } from 'react';
+import Header from './components/layout/Header.jsx';
+import HomePage from './pages/HomePage.jsx';
+import RequestPreviewPage from './pages/RequestPreviewPage.jsx';
 
 export default function App() {
+    const [currentTab, setCurrentTab] = useState('catalog');
+    const [selectedRoom, setSelectedRoom] = useState(null);
+
+    const handleSelectRoom = (room) => {
+        setSelectedRoom(room);
+        setCurrentTab('request'); 
+    };
+
+    const handleTabChange = (tab) => {
+        setCurrentTab(tab);
+    };
+
     return (
-        <>
-            <Header title="Майстерня" />
-            <main>
-                <HomePage />
+        <div className="app-layout">
+            <Header currentTab={currentTab} onTabChange={handleTabChange} />
+
+            <main className="app-content">
+                {currentTab === 'catalog' ? (
+                    <HomePage onSelectRoom={handleSelectRoom} />
+                ) : (
+                    <RequestPreviewPage
+                        selectedRoom={selectedRoom}
+                        onBackToCatalog={() => setCurrentTab('catalog')}
+                    />
+                )}
             </main>
-            <Footer year={2026} />
-        </>
-    )
+
+            <footer className="main-footer">
+                <p>© 2026 Студентський гуртожиток №1 ІФНТУНГ. Усі права захищено.</p>
+            </footer>
+        </div>
+    );
 }

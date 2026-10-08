@@ -1,39 +1,26 @@
-import { useState } from 'react';
-import Header from './components/layout/Header';
-import HomePage from './pages/HomePage';
-import RequestPreviewPage from './pages/RequestPreviewPage';
+import Section from '../components/layout/Section';
+import RoomList from '../components/rooms/RoomList';
+import { roomItems } from '../data/items';
 
-export default function App() {
-    const [currentTab, setCurrentTab] = useState('catalog');
-    const [selectedRoom, setSelectedRoom] = useState(null);
-
-    const handleSelectRoom = (room) => {
-        setSelectedRoom(room);
-        setCurrentTab('request');
-    };
-
-    const handleTabChange = (tab) => {
-        setCurrentTab(tab);
-    };
-
+export default function HomePage({ onSelectRoom }) {
     return (
-        <div className="app-layout">
-            <Header currentTab={currentTab} onTabChange={handleTabChange} />
+        <main className="page-container">
+            <Section
+                title="Студентський гуртожиток №1"
+                description="Комфортне та доступне проживання для студентів."
+            >
+                <div className="info-box">
+                    <h3>ℹ️ Важлива інформація</h3>
+                    <p>Поселення здійснюється відповідно до поданих заявок.</p>
+                </div>
+            </Section>
 
-            <div className="app-content">
-                {currentTab === 'catalog' ? (
-                    <HomePage onSelectRoom={handleSelectRoom} />
-                ) : (
-                    <RequestPreviewPage
-                        selectedRoom={selectedRoom}
-                        onBackToCatalog={() => setCurrentTab('catalog')}
-                    />
-                )}
-            </div>
-
-            <footer className="main-footer">
-                <p>© 2026 Студентський гуртожиток №1 ІФНТУНГ. Усі права захищено.</p>
-            </footer>
-        </div>
+            <Section
+                title="Доступні кімнати"
+                description="Актуальний перелік кімнат гуртожитку та їхній статус поселення."
+            >
+                <RoomList rooms={roomItems} onSelectRoom={onSelectRoom} />
+            </Section>
+        </main>
     );
 }
