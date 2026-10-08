@@ -3,8 +3,10 @@ import { RoomSelectionContext } from '../context/RoomSelectionContext';
 
 export default function useRoomSelection() {
     const context = useContext(RoomSelectionContext);
+
     if (!context) {
-        throw new Error('useRoomSelection must be used within RoomSelectionProvider');
+        throw new Error('useRoomSelection must be used within a RoomSelectionProvider');
     }
+
     return context;
 }

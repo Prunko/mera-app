@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\components",
     "\\src\\components\\requests",
-    "\\src\\components\\ui",
+    "\\src\\components\\rooms",
     "\\src\\context",
     "\\src\\data",
     "\\src\\hooks",
     "\\src\\pages",
     "\\src\\providers"
   ],
-  "SelectedNode": "\\src\\hooks\\useRoomSelection.js",
+  "SelectedNode": "\\src\\pages\\RequestPreviewPage.jsx",
   "PreviewInSolutionExplorer": false
 }

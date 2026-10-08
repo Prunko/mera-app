@@ -1,18 +1,19 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import Section from '../components/layout/Section';
 import RequestForm from '../components/requests/RequestForm';
 import RequestSummary from '../components/requests/RequestSummary';
 import EmptyState from '../components/common/EmptyState';
-import Button from '../ui/Button';
+import useRoomSelection from '../hooks/useRoomSelection';
 
 function createEmptyDraft() {
     return { purpose: '', needsHelp: false };
 }
 
-export default function RequestPreviewPage({ item, onClearSelection }) {
+export default function RequestPreviewPage() {
+    const { selectedItem, clearSelection } = useRoomSelection();
     const [draft, setDraft] = useState(createEmptyDraft);
 
-    const title = item ? `Гуртожиток №1: ${item.name}` : 'Гуртожиток №1: Заявка';
+    const title = selectedItem ? `Гуртожиток №1: ${selectedItem.name}` : 'Гуртожиток №1: Заявка';
 
     useEffect(() => {
         const previousTitle = document.title;
@@ -22,13 +23,18 @@ export default function RequestPreviewPage({ item, onClearSelection }) {
         };
     }, [title]);
 
-    if (!item) {
-        return <EmptyState title="Кімнату не обрано" message="Будь ласка, оберіть кімнату в каталозі." />;
+    if (!selectedItem) {
+        return (
+            <EmptyState
+                title="Кімнату не обрано"
+                message="Будь ласка, оберіть кімнату в каталозі."
+            />
+        );
     }
 
     return (
         <main className="page-container">
-            <Section title="Оформлення заявки" description={`Обрано: ${item.name}`}>
+            <Section title="Оформлення заявки" description={`Обрано: ${selectedItem.name}`}>
                 <div className="request-layout">
                     <RequestForm
                         draft={draft}
@@ -36,13 +42,17 @@ export default function RequestPreviewPage({ item, onClearSelection }) {
                         onNeedsHelpChange={(needsHelp) => setDraft((p) => ({ ...p, needsHelp }))}
                         onReset={() => setDraft(createEmptyDraft())}
                     />
-                    <RequestSummary roomName={item.name} draft={draft} />
+                    <RequestSummary roomName={selectedItem.name} draft={draft} />
                 </div>
 
                 <div style={{ marginTop: '1rem' }}>
-                    <Button variant="outline" onClick={onClearSelection}>
+                    <button
+                        type="button"
+                        className="btn btn-outline"
+                        onClick={clearSelection}
+                    >
                         Скасувати вибір кімнати
-                    </Button>
+                    </button>
                 </div>
             </Section>
         </main>

@@ -1,6 +1,6 @@
 import RoomCard from './RoomCard';
 
-export default function RoomList({ items, selectedId, onSelectRoom }) {
+export default function RoomList({ items = [], selectedId, onSelectRoom }) {
     if (items.length === 0) {
         return <p className="empty-msg">За вашим запитом кімнат не знайдено.</p>;
     }
