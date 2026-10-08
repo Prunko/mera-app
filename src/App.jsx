@@ -1,33 +1,34 @@
-import { useState } from 'react';
-import Header from './components/layout/Header.jsx';
+import { Route, Routes } from 'react-router';
+import AppLayout from './components/layout/AppLayout.jsx';
+import RequestsLayout from './components/layout/RequestsLayout.jsx';
 import HomePage from './pages/HomePage.jsx';
-import RequestPreviewPage from './pages/RequestPreviewPage.jsx';
-import RoomSelectionProvider from './providers/RoomSelectionProvider.jsx';
+import RoomListPage from './pages/RoomListPage.jsx';
+import RoomDetailsPage from './pages/RoomDetailsPage.jsx';
+import RequestsPage from './pages/RequestsPage.jsx';
+import RequestCreatePage from './pages/RequestCreatePage.jsx';
+import RequestEditPage from './pages/RequestEditPage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
+
 import { roomItems } from './data/items.js';
+import { requests } from './data/requests.js';
 
 export default function App() {
-    const [currentTab, setCurrentTab] = useState('catalog');
-
     return (
-        <RoomSelectionProvider items={roomItems}>
-            <div className="app-layout">
-                <Header currentTab={currentTab} onTabChange={setCurrentTab} />
+        <Routes>
+            <Route element={<AppLayout items={roomItems} />}>
+                <Route index element={<HomePage />} />
 
-                <main className="app-content">
-                    {currentTab === 'catalog' ? (
-                        <HomePage
-                            items={roomItems}
-                            onNavigateToRequest={() => setCurrentTab('request')}
-                        />
-                    ) : (
-                        <RequestPreviewPage />
-                    )}
-                </main>
+                <Route path="rooms" element={<RoomListPage items={roomItems} />} />
+                <Route path="rooms/:roomId" element={<RoomDetailsPage items={roomItems} />} />
 
-                <footer className="main-footer">
-                    <p>© 2026 Студентський гуртожиток №1 ІФНТУНГ. Усі права захищено.</p>
-                </footer>
-            </div>
-        </RoomSelectionProvider>
+                <Route path="requests" element={<RequestsLayout />}>
+                    <Route index element={<RequestsPage requests={requests} items={roomItems} />} />
+                    <Route path="new" element={<RequestCreatePage items={roomItems} />} />
+                    <Route path=":requestId/edit" element={<RequestEditPage requests={requests} items={roomItems} />} />
+                </Route>
+
+                <Route path="*" element={<NotFoundPage />} />
+            </Route>
+        </Routes>
     );
 }

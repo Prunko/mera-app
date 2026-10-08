@@ -1,26 +1,23 @@
-export default function Header({ currentTab, onTabChange }) {
+import { Link, NavLink } from 'react-router';
+
+export default function Header({ title, links }) {
     return (
         <header className="main-header">
-            <div className="header-container">
-                <div className="brand">
-                    <span className="brand-icon">🏢</span>
-                    <span className="brand-title">Гуртожиток №1</span>
-                </div>
-                <nav className="main-nav">
-                    <button
-                        className={`nav-link ${currentTab === 'catalog' ? 'active' : ''}`}
-                        onClick={() => onTabChange('catalog')}
+            <Link to="/" className="site-title-link">
+                <h2 className="site-title">{title}</h2>
+            </Link>
+            <nav className="main-nav">
+                {links.map((link) => (
+                    <NavLink
+                        key={link.to}
+                        to={link.to}
+                        end={link.end}
+                        className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
                     >
-                        Каталог кімнат
-                    </button>
-                    <button
-                        className={`nav-link ${currentTab === 'request' ? 'active' : ''}`}
-                        onClick={() => onTabChange('request')}
-                    >
-                        Подати заявку
-                    </button>
-                </nav>
-            </div>
+                        {link.label}
+                    </NavLink>
+                ))}
+            </nav>
         </header>
     );
 }

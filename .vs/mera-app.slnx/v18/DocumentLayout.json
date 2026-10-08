@@ -3,48 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\mera-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\pages\\RequestPreviewPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\RequestPreviewPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\components\\requests\\RequestSummary.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\requests\\RequestSummary.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\pages\\NotFoundPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\NotFoundPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\hooks\\useRoomFilters.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\hooks\\useRoomFilters.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\pages\\RoomDetailsPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\RoomDetailsPage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\components\\layout\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\layout\\Header.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\components\\layout\\AppLayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\layout\\AppLayout.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\providers\\RoomSelectionProvider.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\providers\\RoomSelectionProvider.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\context\\RoomSelectionContext.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\context\\RoomSelectionContext.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\hooks\\useRoomSelection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\hooks\\useRoomSelection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\pages\\HomePage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\HomePage.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\components\\rooms\\RoomCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\rooms\\RoomCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\data\\items.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\data\\items.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Admin\\mera-app\\src\\components\\rooms\\RoomList.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\components\\rooms\\RoomList.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,97 +38,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RequestSummary.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\components\\requests\\RequestSummary.jsx",
-              "RelativeDocumentMoniker": "src\\components\\requests\\RequestSummary.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\components\\requests\\RequestSummary.jsx",
-              "RelativeToolTip": "src\\components\\requests\\RequestSummary.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:37:56.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RoomSelectionContext.js",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\context\\RoomSelectionContext.js",
-              "RelativeDocumentMoniker": "src\\context\\RoomSelectionContext.js",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\context\\RoomSelectionContext.js",
-              "RelativeToolTip": "src\\context\\RoomSelectionContext.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-08T10:31:16.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "useRoomSelection.js",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\hooks\\useRoomSelection.js",
-              "RelativeDocumentMoniker": "src\\hooks\\useRoomSelection.js",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\hooks\\useRoomSelection.js",
-              "RelativeToolTip": "src\\hooks\\useRoomSelection.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-08T10:29:27.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoomSelectionProvider.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\providers\\RoomSelectionProvider.jsx",
-              "RelativeDocumentMoniker": "src\\providers\\RoomSelectionProvider.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\providers\\RoomSelectionProvider.jsx",
-              "RelativeToolTip": "src\\providers\\RoomSelectionProvider.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:24:46.211Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\App.jsx",
-              "RelativeDocumentMoniker": "src\\App.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\App.jsx",
-              "RelativeToolTip": "src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:12:08.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RequestPreviewPage.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\pages\\RequestPreviewPage.jsx",
-              "RelativeDocumentMoniker": "src\\pages\\RequestPreviewPage.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\pages\\RequestPreviewPage.jsx",
-              "RelativeToolTip": "src\\pages\\RequestPreviewPage.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:06:15.941Z",
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Admin\\mera-app\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAgwIQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-08T12:59:23.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomePage.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\pages\\HomePage.jsx",
-              "RelativeDocumentMoniker": "src\\pages\\HomePage.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\pages\\HomePage.jsx",
-              "RelativeToolTip": "src\\pages\\HomePage.jsx",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAoAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "NotFoundPage.jsx",
+              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\pages\\NotFoundPage.jsx",
+              "RelativeDocumentMoniker": "src\\pages\\NotFoundPage.jsx",
+              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\pages\\NotFoundPage.jsx",
+              "RelativeToolTip": "src\\pages\\NotFoundPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:16:46.345Z",
+              "WhenOpened": "2026-10-08T12:58:25.997Z",
               "EditorCaption": ""
             },
             {
@@ -155,48 +74,61 @@
               "RelativeDocumentMoniker": "src\\hooks\\useRoomFilters.js",
               "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\hooks\\useRoomFilters.js",
               "RelativeToolTip": "src\\hooks\\useRoomFilters.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-08T10:16:00.161Z",
+              "WhenOpened": "2026-10-08T12:56:51.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RoomCard.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\components\\rooms\\RoomCard.jsx",
-              "RelativeDocumentMoniker": "src\\components\\rooms\\RoomCard.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\components\\rooms\\RoomCard.jsx",
-              "RelativeToolTip": "src\\components\\rooms\\RoomCard.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "RoomDetailsPage.jsx",
+              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\pages\\RoomDetailsPage.jsx",
+              "RelativeDocumentMoniker": "src\\pages\\RoomDetailsPage.jsx",
+              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\pages\\RoomDetailsPage.jsx",
+              "RelativeToolTip": "src\\pages\\RoomDetailsPage.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:11:14.222Z",
+              "WhenOpened": "2026-10-08T12:54:44.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "items.js",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\data\\items.js",
-              "RelativeDocumentMoniker": "src\\data\\items.js",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\data\\items.js",
-              "RelativeToolTip": "src\\data\\items.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-08T10:10:50.525Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RoomList.jsx",
-              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\components\\rooms\\RoomList.jsx",
-              "RelativeDocumentMoniker": "src\\components\\rooms\\RoomList.jsx",
-              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\components\\rooms\\RoomList.jsx",
-              "RelativeToolTip": "src\\components\\rooms\\RoomList.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Header.jsx",
+              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\components\\layout\\Header.jsx",
+              "RelativeDocumentMoniker": "src\\components\\layout\\Header.jsx",
+              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\components\\layout\\Header.jsx",
+              "RelativeToolTip": "src\\components\\layout\\Header.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-10-08T10:09:04.545Z",
+              "WhenOpened": "2026-10-08T12:53:18.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppLayout.jsx",
+              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\components\\layout\\AppLayout.jsx",
+              "RelativeDocumentMoniker": "src\\components\\layout\\AppLayout.jsx",
+              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\components\\layout\\AppLayout.jsx",
+              "RelativeToolTip": "src\\components\\layout\\AppLayout.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-10-08T12:48:12.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Admin\\mera-app\\src\\App.jsx",
+              "RelativeDocumentMoniker": "src\\App.jsx",
+              "ToolTip": "C:\\Users\\Admin\\mera-app\\src\\App.jsx",
+              "RelativeToolTip": "src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-10-08T12:46:34.479Z",
               "EditorCaption": ""
             }
           ]

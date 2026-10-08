@@ -1,34 +1,40 @@
-import { useState } from 'react';
+import { useSearchParams } from 'react-router';
 
 export default function useRoomFilters(items = []) {
-    const [query, setQuery] = useState('');
-    const [availableOnly, setAvailableOnly] = useState(false);
+    const [searchParams, setSearchParams] = useSearchParams();
 
-    const safeItems = Array.isArray(items) ? items : [];
+    const query = searchParams.get('q') ?? '';
+    const availableOnly = searchParams.get('available') === '1';
 
-    const visibleItems = safeItems.filter((item) => {
+    const normalizedQuery = query.trim().toLowerCase();
+
+    const visibleItems = items.filter((item) => {
         if (!item) return false;
-
-        const name = item.name ? String(item.name).toLowerCase() : '';
-        const matchesQuery = name.includes(query.trim().toLowerCase());
-
+        const nameMatches = String(item.name || '').toLowerCase().includes(normalizedQuery);
         const isAvailable = item.status ? item.status === 'available' : item.isAvailable ?? true;
-        const matchesAvailability = !availableOnly || isAvailable;
-
-        return matchesQuery && matchesAvailability;
+        return nameMatches && (!availableOnly || isAvailable);
     });
 
-    function resetFilters() {
-        setQuery('');
-        setAvailableOnly(false);
+    function setQuery(value) {
+        const next = new URLSearchParams(searchParams);
+        if (value === '') next.delete('q');
+        else next.set('q', value);
+        setSearchParams(next, { replace: true });
     }
 
-    return {
-        query,
-        setQuery,
-        availableOnly,
-        setAvailableOnly,
-        visibleItems,
-        resetFilters,
-    };
+    function setAvailableOnly(value) {
+        const next = new URLSearchParams(searchParams);
+        if (value) next.set('available', '1');
+        else next.delete('available');
+        setSearchParams(next);
+    }
+
+    function resetFilters() {
+        const next = new URLSearchParams(searchParams);
+        next.delete('q');
+        next.delete('available');
+        setSearchParams(next);
+    }
+
+    return { query, setQuery, availableOnly, setAvailableOnly, visibleItems, resetFilters };
 }

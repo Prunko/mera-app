@@ -3,7 +3,7 @@
     "",
     "\\src",
     "\\src\\components",
-    "\\src\\components\\requests",
+    "\\src\\components\\layout",
     "\\src\\components\\rooms",
     "\\src\\context",
     "\\src\\data",
@@ -11,6 +11,6 @@
     "\\src\\pages",
     "\\src\\providers"
   ],
-  "SelectedNode": "\\src\\pages\\RequestPreviewPage.jsx",
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }
